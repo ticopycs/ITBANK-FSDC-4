@@ -28,7 +28,6 @@ body {
 }
 /* Encabezado */
 .header-conteiner {
-    height: 100px;
     display: flex;
     justify-content: space-between;
    align-items: center;
@@ -68,4 +67,15 @@ section {
 .footer { 
     border-bottom: none;
     border-top: 4px solid var(--overlay);
+    height: min-content;
+    padding-bottom: 10px;
+}
+.footer-contenido { 
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-contenido ol { 
+    list-style-type: none;
 }
