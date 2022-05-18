@@ -22,6 +22,10 @@ body {
 
 }
 
+a:link{
+    text-decoration: solid;
+}
+
 section{
     background-color: rgb(29, 33, 54);
 }
@@ -33,6 +37,7 @@ section{
     width: 100vw;
     height: 100px;
     border-bottom: 4px solid var(--overlay);
+    font-family: 'Inter', sans-serif;
 }
 /* Encabezado */
 .header-conteiner {
@@ -43,9 +48,10 @@ section{
 .logo a { 
     text-decoration: none;
     color: var(--fondo);
-    font-family: 'Koulen', cursive;
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace, sans-serif,;
     font-size: 60px;
     padding-left: 30px;
+
 }
 
 .conteiner-listas { 
