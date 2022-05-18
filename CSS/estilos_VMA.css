@@ -27,7 +27,7 @@ body {
     border-bottom: 4px solid var(--overlay);
 }
 /* Encabezado */
-.header-contenido {
+.header-conteiner {
     height: 100px;
     display: flex;
     justify-content: space-between;
