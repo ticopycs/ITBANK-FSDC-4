@@ -60,6 +60,10 @@ body {
     height: 25px;
     border-radius: 5px;
 }
+/* Cuerpo de a pagina */
+section { 
+    height:100vh;
+}
 /* Pie de Pagina*/
 .footer { 
     border-bottom: none;
