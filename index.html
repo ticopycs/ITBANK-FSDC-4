@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>ITBANK</title>
-</head>
-<body>
-    <div id="fondo-imagen"><img src="/img/architecture-g4575d4364_1920.jpg" alt=""></div>
-    <div id="fondo"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ITBANK</title>
+    </head>
+    <body>
 
-    <div id="contenido">
+
+        <!-- Fondo estatico e imagen de fondo-->
+        <div id="fondo-imagen"><img src="/img/architecture-g4575d4364_1920.jpg" alt=""></div>
+        <div id="fondo"></div>
+
+        <!-- Cabecera-->
+        <div class="header">
+            <div class="header-conteiner">
+                <div class="logo">
+                    <a href="VanAckereMA.html">ITBANK</a>
+                </div>
+                <ul class="conteiner-listas">
+                    <li>Menú</li>
+                    <li>About Us</li>
+                    <li>Help</li>
+                </ul>
+                <div class="conteiner-buscador">
+                    <input type="text">
+                    <button>Lupa</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cuerpo de la página-->
+        <section>
+            <div id="ahorro-pesos" class="cuentaBancaria-contenedor">
+                <h2 class="cuentaBancaria-titulo">Caja de ahorro en pesos:</h2>
+                <p class="cuentaBancaria-monto">$ 45.324,50</p>
+            </div> 
+
+            <div id="cuenta-corriente" class="cuentaBancaria-contenedor">
+                <h2 class="cuentaBancaria-titulo">Cuenta corriente:</h2>
+                <p class="cuentaBancaria-monto">$ 10.500,00</p>
+            </div>
+
+            <div id="ahorro-dolares" class="cuentaBancaria-contenedor">
+                <h2 class="cuentaBancaria-titulo">Caja de ahorro en dolares:</h2>
+                <p class="cuentaBancaria-informacion">no se ha abierto cuenta en dolares</p>
+            </div>
+
+
+        <!-- seccion contenido-->
         
-        <div id="ahorro-pesos" class="cuenta-bancaria">
-            <h2 class="cuenta-bancaria-titulo">Caja de ahorro en pesos:</h2>
-            <p class="cuenta-bancaria-monto">$ 45.324,50</p>
-        </div> 
+            <div id="contenido">
+        
+                <!-- Datos de saldo en cuentas-->
 
-        <div id="cuenta-corriente" class="cuenta-bancaria">
-            <h2 class="cuenta-bancaria-titulo">Cuenta corriente:</h2>
-            <p class="cuenta-bancaria-monto">$ 10.500,00</p>
-        </div>
+                <!-- acciones e informacion de la cuenta-->
+                <div id="caja">
+                    <div id="transferencias" class="accionesInformacion-contenedor" >
+                        <h2 class="accionesInformacion-titulo">TRANSFERENCIAS</h2>
+                    </div>
+                    <div id="pago-servicios" class="accionesInformacion-contenedor" >
+                        <h2 class="accionesInformacion-titulo">PAGO DE SERVICIOS</h2>
+                    </div>
+                    <div id="prestamos" class="accionesInformacion-contenedor" >
+                        <h2 class="accionesInformacion-titulo">PRESTAMOS</h2>
+                    </div>
+                    <div id="seguros" class="accionesInformacion-contenedor" >
+                        <h2 class="accionesInformacion-titulo">SEGUROS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div id="ahorro-dolares" class="cuenta-bancaria">
-            <h2 class="cuenta-bancaria-titulo">Caja de ahorro en dolares:</h2>
-            <p class="cuenta-bancaria-mensaje">no se ha abierto cuenta en dolares</p>
+        <!-- A partir de acá empieza el Footer/Pie de pagina-->
+        <div class="footer">
+            <div>
+                <ol class="footer-contenido">
+                    <li>ITBANK</li>
+                    <li>Buenos Aires - Argentina </li>
+                        <ol>
+                            <li>Colaboradores:</li>
+                            <li>Lucas Miranda</li>
+                            <li>Martin Gabriel Reale Latini</li>
+                            <li>Valentín Tubaro</li>
+                            <li>Mariano Lena</li>
+                            <li>Melina Van Ackere</li>
+                            <li>Valentín Pugliese</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
         </div>
-
-        <div id="caja">
-            <div id="transferencias" class="caja-informacion" >
-                <h2 class="caja-informacion-titulo">TRANSFERENCIAS</h2>
-            </div>
-            <div id="pago-servicios" class="caja-informacion" >
-                <h2 class="caja-informacion-titulo">PAGO DE SERVICIOS</h2>
-            </div>
-            <div id="prestamos" class="caja-informacion" >
-                <h2 class="caja-informacion-titulo">PRESTAMOS</h2>
-            </div>
-            <div id="seguros" class="caja-informacion" >
-                <h2 class="caja-informacion-titulo">SEGUROS</h2>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
