@@ -1,0 +1,95 @@
+.text{
+    margin-left: 150px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* font-family: 'Koulen', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root { /* Paleta de Colores*/
+    --negro: rgb(10, 9, 9);
+    --overlay: #659CA8; 
+    --fondo: rgb(244, 243, 243);
+
+}
+body { 
+    color: var(--negro);
+    background-color: var(--fondo);
+
+}
+
+a:link{
+    text-decoration: solid;
+}
+
+section{
+    background-color: rgb(29, 33, 54);
+}
+
+/* Encabezado y Pie de pagina*/
+.header,.footer {  
+    color: var(--fondo);
+    background-color: var(--negro);
+    width: 100vw;
+    height: 100px;
+    border-bottom: 4px solid var(--overlay);
+    font-family: 'Inter', sans-serif;
+}
+/* Encabezado */
+.header-conteiner {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.logo a { 
+    text-decoration: none;
+    color: var(--fondo);
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace, sans-serif,;
+    font-size: 60px;
+    padding-left: 30px;
+
+}
+
+.conteiner-listas { 
+    list-style-type: none;
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.conteiner-buscador { padding-right: 30px;}
+.conteiner-buscador input { 
+    border-radius: 5px;
+    height: 20px;
+    border: none;
+}
+.conteiner-buscador button { 
+    color: var(--overlay);
+    background-color: var(--overlay);
+    height: 25px;
+    border-radius: 5px;
+}
+/* Cuerpo de a pagina */
+section { 
+    height: 100vh;
+}
+/* Pie de Pagina*/
+.footer { 
+    border-bottom: none;
+    border-top: 4px solid var(--overlay);
+    height: min-content;
+    padding-bottom: 10px;
+}
+.footer-contenido { 
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-contenido ol { 
+    list-style-type: none;
+}
