@@ -88,7 +88,9 @@ section {
     height: 100vh;
 }
 /* Pie de Pagina*/
-.footer { 
+.footer {
+    margin-top: 10px;
+    position: absolute; 
     border-bottom: none;
     border-top: 4px solid var(--overlay);
     height: min-content;
@@ -108,105 +110,110 @@ section {
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /** se establece el diseño del fondo y de la imagen estatica */
 #fondo-imagen{
     position: fixed;
     width: 100%;
-    height: 150vh;
+    height: 100%;
 }
 #fondo{
     position: fixed;
     width: 100%;
-    height: 150vh;
+    height: 100%;
     background-image: linear-gradient(rgba(0, 102, 153, 0.900),rgb(224, 224, 224));
 }
-
-/** se establece el diseño de la clase cuentaBancaria */
-.cuentaBancaria-contenedor{
-    background-color: rgba(240, 248, 255, 0.500);
-    position: absolute;
-    float: right;
-    height: 300px;
-    width: 370px;
+/*@media (max-width:300px){
+    #cuentas{
+        flex-direction: column;
+        justify-content: center;}
+    #informacion{
+        flex-direction: column;
+        justify-content: center;}
+}*/
+#cuentas{
+    margin-top: 130px;
+    min-width: 300px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    flex-wrap: wrap;
 }
-.cuentaBancaria-titulo{
+#cuentas div{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.373);
+    margin: 5px;
+    min-width: 400px;
+}
+#cuentas h2{
+    padding: 10px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#cuentas p{
+    font-size: 30px;
+    margin-bottom: 100px;
+text-align: center;
+}
+
+#informacion{
+    position: relative;
+    display: flexbox;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.808);
+    min-width: 300px;
+}
+#informacion button{
+    background-color: rgba(7, 116, 171, 0.636);
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+    
+}
+
+#informacion p{
+    padding-bottom: 20px;
+    text-align: center;
     color: white;
-    padding-top: 10px;
 }
-.cuentaBancaria-monto{
+#promociones{
+    position: relative;
+    display: flexbox;
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.808);
+    min-width: 300px;
+    margin-top: 10px;
+}
+#promociones button{
+    background-color: rgba(7, 116, 171, 0.636);
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+    
+}
+
+#promociones p{
+    margin: 10px;
+    font-size: xx-large;
+    padding-bottom: 100px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    padding-top: 100px;
-    font-size: 45px;
-}
-.cuentaBancaria-informacion{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    padding-top: 125px;
-}
-/** se establecen los elementos que heredan de la clase cuentaBAncaria */
-#ahorro-dolares{
-    top:100px ;
-    left: 130vh;
-}
-#cuenta-corriente{
-    top:100px ;
-    left: 75vh;
-}
-#ahorro-pesos{
-    top:100px ;
-    left: 20vh;
-}
-/** se establece el diseño del fondo de la seccion contenido */
-#contenido{
-    width: 100%;
-    height: 100vh;
 }
 
 
-/** se establece el diseño de la clase accionesInformacion */
-.accionesInformacion-contenedor{
-    background-color: rgb(240, 248, 255);
-    position: absolute;
-    height: 80px;
-    width: 45vh;
-}
-
-.accionesInformacion-titulo{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #069;
-    padding-top: 5px;
-}
-
-
-#transferencias{
-    left: 3vh;
-}
-#pago-servicios{
-    left: 52vh;
-}
-#prestamos{
-    left: 102vh;
-}
-#seguros{
-    left: 152vh;
-}
-#caja{
-    background-color: rgba(240, 248, 255, 0.87);
-    position: absolute;
-    top:500px ;
-    float: right;
-    height: 800px;
-    width: 100%;
-}
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 /* font-family: 'Koulen', cursive;*/
@@ -237,6 +244,7 @@ body {
 }
 /* Encabezado */
 .header-conteiner {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
    align-items: center;
